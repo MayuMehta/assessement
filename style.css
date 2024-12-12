@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  /* list-style: none; */
+}
+body {
+  background: whitesmoke;
+}
+ul{
+  list-style: none;
+}
+.container{
+  padding: 5px 10px;
+}
+ .container nav{
+  background: rgb(254, 251, 251);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
+ /* a {
+  display: inline-block;
+  color: lightgrey;
+  font-size: 16px;
+  white-space: nowrap;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 30px;
+  transition: all 0.15s ease-in-out;
+  } */
+nav div{
+  width: 33%;
+}
+.logo a,.menu-item ul,.logo-icons ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+.menu-item ul a,.logo-icons ul a{
+  padding: 0 20px;
+  font-weight: 700;
+}
+.logo-icons ul a li{
+  font-size: 30px;
+}
+.menu-icon{
+  display: none;
+}
+.background-img{
+  background-image: url('./assets/bg.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  filter: opacity(0.6);
+  position: relative;
+}
+.background .background-item{
+  position: absolute;
+  text-align: center; 
+  bottom: 40%;
+}
+
+.cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  min-height: 300px;
+  width: 100%;
+  gap: 5px;
+}
+.cart .cart-total{
+  background: #f9f1e7;
+  min-height: 80%;
+  padding: 10px;
+  min-width: 20%;
+  border-radius: 10px;
+  text-align: center;
+}
+table{
+  height: 100%;
+  border-spacing: 0;
+}
+#table tr{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+.price{
+  color: #d1c8b9;
+}
+#table tr td{
+  width: 20%;
+  padding: 10px;
+  font-weight: 700;
+  height: 150px;
+}
+#table tr th{
+  background: #f9f1e7;
+  padding: 10px;
+}
+#quantity{
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+button{
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#total{
+  color: #e28743;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.footer{
+  background: #f9f1e7;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer div{
+  padding: 10px;
+}
+
+.quality,.warrenty,.support,.shipping{
+  display: flex;
+}
+.footer-logo span{
+  font-size: 50px;
+}
+@media screen and ( max-width:720px) {
+  .menu-item{
+    display: none;
+  }
+}
