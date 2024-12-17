@@ -36,3 +36,13 @@ fetch('https://cdn.shopify.com/s/files/1/0883/2188/4479/files/apiCartData.json?v
     console.log(error);   
 });
 
+function clickDot(){
+    document.getElementById('dot').style.display='none';
+    document.getElementById('cross').style.display='block';
+    document.getElementById('cross').style.fontSize='25px';
+}
+function clickCross(){
+    document.getElementById('dot').style.display='Block';
+    document.getElementById('cross').style.display='none';
+}
+
