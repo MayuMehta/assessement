@@ -144,8 +144,22 @@ button{
 .footer-logo span{
   font-size: 50px;
 }
+.logo-menu{
+  display: none;
+}
 @media screen and ( max-width:720px) {
   .menu-item{
     display: none;
   }
+  .logo-menu{
+    display: block;
+    font-size: 25px;
+  }
+  .logo-icons{
+    display: none;
+  }
+  .cart-total{
+    width: 100%;
+  }
+  
 }
