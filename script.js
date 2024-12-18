@@ -40,8 +40,12 @@ function clickDot(){
     document.getElementById('dot').style.display='none';
     document.getElementById('cross').style.display='block';
     document.getElementById('cross').style.fontSize='25px';
+    document.getElementById('menu-list').style.display='block';
+    document.getElementById('background-item').style.top='60%';
 }
 function clickCross(){
+    document.getElementById('background-item').style.top='20%';
+    document.getElementById('menu-list').style.display='none';
     document.getElementById('dot').style.display='Block';
     document.getElementById('cross').style.display='none';
 }
